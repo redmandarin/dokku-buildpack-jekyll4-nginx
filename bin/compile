@@ -19,11 +19,6 @@ function indent() {
   esac
 }
 
-echo "-----> Installing sassc prerequisites"
-su -
-apt-get install sudo -y
-sudo apt-get install autotools-dev autoconf libtool
-
 if [[ `ruby -v` != "ruby 2.7"* ]]; then
   echo "-----> Installing Ruby 2.7.2"
   git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
