@@ -20,6 +20,7 @@ function indent() {
 }
 
 echo "-----> Installing sassc prerequisites"
+su -
 apt-get install sudo -y
 sudo apt-get install autotools-dev autoconf libtool
 
