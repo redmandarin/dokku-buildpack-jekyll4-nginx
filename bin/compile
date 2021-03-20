@@ -20,7 +20,7 @@ function indent() {
 }
 
 echo "-----> Installing sassc prerequisites"
-apt-get install autotools-dev autoconf libtool
+sudo apt-get install autotools-dev autoconf libtool
 
 if [[ `ruby -v` != "ruby 2.7"* ]]; then
   echo "-----> Installing Ruby 2.7.2"
