@@ -53,6 +53,7 @@ if [ ! -f $BUILD_DIR/.gems/bin/jekyll ]; then
     echo "Jekyll not found!"
     echo "-----> Installing Jekyll"
 
+    gem install sassc -v 2.1.0 | indent
     gem install listen --no-document | indent
     gem install liquid --no-document | indent
     gem install jekyll redcarpet sass --no-document | indent
